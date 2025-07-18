@@ -1,0 +1,94 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts and body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f111a;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header.scrolled {
+  background: rgba(20, 20, 30, 0.8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Nav Links */
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #00e0ff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background: #00e0ff;
+  color: #0f111a;
+  box-shadow: 0 0 10px #00e0ffaa;
+}
+
+/* Sections */
+.section {
+  padding: 120px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home {
+  background: linear-gradient(145deg, #1a1c2b, #23263a);
+}
+
+#features {
+  background: linear-gradient(145deg, #202437, #2b2e42);
+}
+
+#contact {
+  background: linear-gradient(145deg, #25283d, #30344a);
+}
+
+h1, h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
